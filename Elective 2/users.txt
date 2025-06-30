@@ -1,0 +1,3 @@
+clark@gmail.com:$2y$10$fR65k7DxPmq2CY2UbEbnq.40lXCoG2WxzthEKffe7oIDYbPsc1BpK:25
+clark1@gmail.com:$2y$10$bcMcv45jXULbkS9zG0aNZOs1fEaDo3/koSI3r163XpMVpBzESL6TC:990
+clark:clark2@gmail.com:990
