@@ -13,7 +13,7 @@ $money = $_SESSION['money'];
 // Slot symbols
 $symbols = ['🍒', '🍋', '🔔', '⭐', '🍀', '7️⃣'];
 $rows = 3;
-$cols = 5;
+$cols = 3;
 $betOptions = [10, 25, 50, 75, 100];
 
 // Handle spin
@@ -117,7 +117,8 @@ if (isset($_POST['reset'])) {
         <?php if ($message) echo "<p class='message'>$message</p>"; ?>
         <?php if ($result): ?>
             <div class="slot-grid">
-                <?php for ($i = 0; $i < $rows; $i++): ?>
+                <?php for (
+                    $i = 0; $i < $rows; $i++): ?>
                     <div class="slot-row">
                         <?php for ($j = 0; $j < $cols; $j++): ?>
                             <span class="slot-cell"><?php echo $result[$i][$j]; ?></span>
