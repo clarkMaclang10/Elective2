@@ -1,14 +1,24 @@
 body {
-    background: #222;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+body.beach-bg {
+    background: url('images/beach-background.png') no-repeat left center fixed;
+    background-size: cover;
+}
+
+body.slot-bg {
+    background: url('images/slot-holder.png') no-repeat center bottom fixed, 
+                url('images/beach-background.png') no-repeat left center fixed;
+    background-size: contain, cover;
+}
 .container {
     background: #333;
     max-width: 400px;
-    margin: 40px auto;
+    margin: 100px auto;
     padding: 30px 30px 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
@@ -71,7 +81,17 @@ button:hover {
     color: #ff5252;
     text-align: center;
 }
+
 .success {
     color: #4caf50;
     text-align: center;
+}
+
+/*
+This is how you can style text. You can change the font, size, and color as needed.
+The fonts that should be used are 'Oi', sans-serif, and 'Spicy Rice', cursive.
+*/
+#welcome-user {
+    font-family: 'Oi', sans-serif;
+    font-weight: 200;
 }
