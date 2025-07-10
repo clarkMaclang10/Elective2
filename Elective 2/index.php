@@ -1,3 +1,12 @@
+<!--
+!READ THIS FIRST BEFORE EVERYTHING!
+
+For frontend developers:
+Add id in every element that needs to be styled or manipulated, see line 110 for reference.
+
+For backend developers:
+Apply your PHP logic here to handle user sessions, spins, and balance updates.
+-->
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -94,10 +103,13 @@ if (isset($_POST['reset'])) {
     <meta charset="UTF-8">
     <title>Slot Machine</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="slot-bg">
     <div class="container">
-        <h2>Welcome, <?php echo htmlspecialchars($username); ?>!</h2>
+        <h2 id="welcome-user">Welcome, <?php echo htmlspecialchars($username); ?>!</h2>
         <form method="post" style="float:right;">
             <button type="submit" name="logout">Logout</button>
         </form>
