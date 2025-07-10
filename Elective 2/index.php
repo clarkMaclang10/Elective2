@@ -2,10 +2,11 @@
 !READ THIS FIRST BEFORE EVERYTHING!
 
 For frontend developers:
-Add id in every element that needs to be styled or manipulated, see line 110 for reference.
+Add id in every element that needs to be styled or manipulated, see line 113 for reference.
 
 For backend developers:
 Apply your PHP logic here to handle user sessions, spins, and balance updates.
+Add database connections and logic to handle user data.
 -->
 <?php
 session_start();
