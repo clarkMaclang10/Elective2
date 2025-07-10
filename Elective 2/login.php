@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
     <title>Login / Register</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="beach-bg">
     <div class="container">
         <?php if (!$showRegister): ?>
             <h2>Login</h2>
